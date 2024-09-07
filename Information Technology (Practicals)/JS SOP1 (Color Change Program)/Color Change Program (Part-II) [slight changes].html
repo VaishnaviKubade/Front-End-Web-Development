@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><title>2. Color Change Program</title>
+<script language=javascript>		
+function mycolor(){
+window.setTimeout("document.bgColor='red'",2000)
+window.setTimeout("document.bgColor='blue'",4000)
+window.setTimeout("document.bgColor='green'",6000)
+window.setTimeout("document.bgColor='yellow'",8000)
+window.setTimeout("document.bgColor='orange'",10000)
+window.setTimeout("document.bgColor='brown'",12000)
+window.setTimeout("document.bgColor='pink'",14000)
+window.setTimeout("mycolor()",16000)
+}//function is over
+function mymsg(){
+window.alert("Thank you for visiting")
+}</script></head><body><form name=myf>
+<body onload="mycolor()"onunload=mymsg()>
+</body>
+</html>
+

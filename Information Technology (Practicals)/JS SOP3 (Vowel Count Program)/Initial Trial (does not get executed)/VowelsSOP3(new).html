@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language=javascript>
+function vowel()
+{
+mystr=myf.mystring.value
+cnt=0
+for(i=0;i<mystr.length;i++)
+{
+onech=mystr.charAt(i)
+if(onech=='a'||onech=='e'||onech=='i'||onech=='o'||onech=='u'||onech=='A'||onech=='E'||onech=='I'||onech=='O'||onech='U')
+cnt++
+}
+document.write("vowels in"+ mystr +" are "+cnt)
+}//end of function
+</script>
+</head>
+<body>
+<form name=myf>
+<h1>Count vowels program<br>
+Enter string:<input type=text name=mystring>
+<input type=button value="count vowels"onclick=vowel()>
+</form>
+</body>
+</html>

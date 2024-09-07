@@ -1,0 +1,21 @@
+<!-----Vaishnavi Kubade, 24031, 2(SOP4) event driven Javascript program(Palindrome program)------>
+<!DOCTYPE html>
+<html>
+<head><title>Palindrome or not</title>
+<script language=javascript>
+function mystrf(){
+mystring=myf.mystr.value
+revstr=""
+for(i=mystring.length-1;i>=0;i--)
+revstr=revstr+mystring.charAt(i)
+alert(revstr)
+if(revstr==mystring)
+alert("Palindrome String")
+else
+alert("not a Palindrome String")
+}//end of function</script></head>
+<body bgcolor=yellow>
+<form name=myf><h2>Enter String:</h2>
+<input type=text name=mystr><br><br>
+<input type=button value="Check Palindrome or not" onclick=mystrf()>
+</form></body></html>

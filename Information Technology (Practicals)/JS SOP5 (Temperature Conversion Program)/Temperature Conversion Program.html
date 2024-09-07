@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Temperature Conversion Program</title>
+<script language=javascript>
+function c2f()
+{
+cTemp=myf.celsius.value;
+cTemp=parseFloat(cTemp)
+cToFahr=cTemp*9/5+32
+document.write(cToFahr)
+}
+function f2c()
+{
+fTemp=myf.fahrenheit.value;
+fTemp=parseFloat(fTemp)
+fToCel=(fTemp-32)*5/9;
+document.write(fToCel)
+}
+</script>
+</head>
+<body bgcolor=yellow>
+<form name=myf>
+<h2>Enter Temperature : </h2>
+<input type=text name=fahrenheit>
+<input type=button value="Convert Fahrenheit to Celsius"onclick=f2c()><br>
+<input type=text name=celsius>
+<input type=button value="Convert Celsius to Fahrenheit"onclick=c2f()>
+</form>
+</body>
+</html>
+
+
+
+
+
+

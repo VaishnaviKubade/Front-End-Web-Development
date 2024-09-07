@@ -1,0 +1,34 @@
+<!--Vaishnavi Kubade 24031
+Date:17/09/2020 SOP5 Javascript Temperature Converter program-->
+<!DOCTYPE html>
+<html>
+<head><title>Temperature Program</title>
+<script language=javascript>
+function convertinf()
+{
+tmp=myf.temp.value
+//T(°F)=T(°C)*9/5+32
+tempF=tmp*9/5+32
+document.write("Temp in Fahrenheit:"+tmp+"<sup>0</sup>C"+"is:"+tempF+"<sup>0</sup>F")
+}//function is over
+//==============
+function convertincel()
+{
+tmp=myf.temp.value
+//T(°C)=(T(°F)-32)*5/9
+tempC=(temp-32)
+document.write("Temp in Celsius:"+tmp+"<sup>0</sup>F"+"is:"+tempC+"<sup>0</sup>C")
+}//function is over
+</script>
+</head>
+<body>
+<form name=myf>Enter Temperature in Celsius to convert:
+<input type=text name=temp>
+<input type=button onclick=convertinf() value="change to Fahrenheit">
+<input type=button onclick=convertincel() value="change to celsius">
+</form>
+</body>
+</html>
+
+
+
